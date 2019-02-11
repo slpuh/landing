@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['middleware'=>'web'], function(){
+Route::group([], function(){
 
     Route::match(['get','post'],'/',['uses'=>'IndexController@execute'])->name('home');
     Route::get('/page/{alias}', ['uses'=>'PageController@execute'])->name('page');
@@ -26,6 +26,11 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function(){
     //admin
     Route::get('/', function(){
         
+        if(view()->exists('admin.index')){
+            $data=['title'=>'Панель администратора'];
+            return view('admin.index',$data);
+                
+        }
         
     });
     //admin/pages
@@ -61,3 +66,7 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function(){
 });
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

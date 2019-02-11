@@ -15,7 +15,7 @@ class PeoplesTableSeeder extends Seeder
             [
             'name' => 'Tom Jonson',
             'position' => 'CEO',
-            'images' => 'images1.jpg',
+            'images' => 'team_pic1.jpg',
              'text' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing'
                 . ' elit. Aenean commodo ligula eget dolor. Aenean massa. Cum '
                 . 'sociis natoque penatibus et magnis dis parturient montes, '
@@ -25,7 +25,7 @@ class PeoplesTableSeeder extends Seeder
             [
             'name' => 'Ivan Ivanov',
             'position' => 'Director',
-            'images' => 'images2.jpg',
+            'images' => 'team_pic2.jpg',
              'text' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing'
                 . ' elit. Aenean commodo ligula eget dolor. Aenean massa. Cum '
                 . 'sociis natoque penatibus et magnis dis parturient montes, '
@@ -35,7 +35,7 @@ class PeoplesTableSeeder extends Seeder
             [
             'name' => 'John Tomson',
             'position' => 'Meneger',
-            'images' => 'images3.jpg',
+            'images' => 'team_pic3.jpg',
              'text' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing'
                 . ' elit. Aenean commodo ligula eget dolor. Aenean massa. Cum '
                 . 'sociis natoque penatibus et magnis dis parturient montes, '
