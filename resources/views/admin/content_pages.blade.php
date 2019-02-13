@@ -1,3 +1,4 @@
+<div class="wrapper container">
 <div style="margin:0px 50px 0px 50px;">
 
     @if($pages)
