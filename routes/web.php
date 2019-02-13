@@ -40,7 +40,7 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function(){
         //admin/pages/add
         Route::match(['get','post'],'/add',['uses'=>'PagesAddController@execute'])->name('pagesAdd');
         //admin/edit/2
-        Route::match(['get','post','delete'],'/edit/{page}',['uses'=>'PagesEditController@execute'])->name('pagesEdit');
+        Route::match(['post','get','delete'],'/edit/{page}',['uses'=>'PagesEditController@execute'])->name('pagesEdit');
     });
     
     //admin/portfolio
